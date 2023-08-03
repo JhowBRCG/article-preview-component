@@ -1,0 +1,78 @@
+@use "mixins";
+
+@include mixins.medium-device {
+  .card {
+    &__content {
+      .card__share {
+        bottom: 100px;
+        right: 20px;
+
+        &:before {
+          margin: auto 0 auto auto;
+          border-left: 15px solid rgba(0, 0, 0, 0);
+          border-right: 20px solid rgba(0, 0, 0, 0);
+          border-top: 20px solid #48556a;
+          transform: translateY(24px) translateX(-5px);
+        }
+      }
+    }
+  }
+}
+
+@include mixins.small-device {
+  .card {
+    grid-template-columns: 1fr;
+    overflow: hidden;
+
+    &__img {
+      border-radius: 0;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+    }
+
+    &__content {
+      border-radius: 0;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+
+      .card__author {
+        margin-top: 1rem;
+      }
+
+      .card__share-button {
+        z-index: 1;
+        position: relative;
+        top: 15px;
+      }
+
+      .card__share {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        min-height: 25%;
+        gap: 2rem;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        transition: all 200ms ease;
+        transform: translateY(200px);
+        display: flex;
+
+        &::before {
+          content: none;
+        }
+
+        p {
+          font-size: 1.5rem;
+        }
+
+        i {
+          font-size: 2.5rem;
+        }
+      }
+
+      .card__share.show {
+        transform: translateX(1px);
+      }
+    }
+  }
+}

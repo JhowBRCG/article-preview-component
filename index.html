@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Article Preview Component</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="shortcut icon"
+      href="src/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="src/css/style.min.css" />
+  </head>
+  <body>
+    <main>
+      <article class="card">
+        <img src="src/images/drawers.jpg" alt="image" class="card__img" />
+        <div class="card__content">
+          <h3 class="card__content-title">
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </h3>
+          <p class="card__content-text">
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I've got some simple tipos to
+            help you make any room feel complete.
+          </p>
+
+          <div class="card__author">
+            <div class="card__author-content">
+              <img
+                src="src/images/avatar-michelle.jpg"
+                class="card__author-img"
+                alt="author image"
+              />
+
+              <div>
+                <h4 class="card__author-name">Michelle Appleton</h4>
+                <p class="card__author-date">28 Jun 2020</p>
+              </div>
+            </div>
+
+            <button
+              class="card__share-button"
+              aria-label="open share menu"
+              id="button"
+            >
+              <i class="fa-solid fa-share"></i>
+            </button>
+          </div>
+          <div class="card__share">
+            <p>share</p>
+            <a href="#" aria-label="Go visit my facebook"
+              ><i class="fa-brands fa-square-facebook"></i
+            ></a>
+            <a href="#" aria-label="Go visit my Twitter"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="#" aria-label="Go visit my Pinteres"
+              ><i class="fa-brands fa-pinterest"></i
+            ></a>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <script src="src/js/modal.js"></script>
+  </body>
+</html>

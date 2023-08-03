@@ -1,0 +1,38 @@
+@use "variables";
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 1.3rem;
+  font-family: variables.$main-font;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: variables.$light-grayish-blue;
+  padding: 1rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+img {
+  width: 100%;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
